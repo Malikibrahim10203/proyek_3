@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/biodata', function() {
     return view('biodata');
 });
+
+Route::get('/dashboard', function() {
+    return view('dashboard');
+});

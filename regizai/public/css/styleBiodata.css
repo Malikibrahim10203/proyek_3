@@ -1,10 +1,11 @@
 html, body {
     height: 100%;
     font-family: 'Poppins';
+    overflow: hidden;
 }
 
 .center-content {
-    height: 30%;
+    height: 20%;
     justify-content: center;
     align-items: center;
 }
@@ -16,6 +17,7 @@ html, body {
 
 .biodata {
     font-size: 48pt;
+    font-weight: bold;
     margin: 0px;
     padding: 0px;
 }
@@ -30,6 +32,7 @@ html, body {
     width: 70vh;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 6%;
 }
 
 .tgl {
@@ -46,4 +49,13 @@ html, body {
     width: 20vh;
     background-color: #734597 !important;
     border-color: #734597 !important;
+}
+
+.btn-outline-secondary {
+    width: 8vh;
+}
+
+.input-date::-webkit-inner-spin-button, .input-date::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }
