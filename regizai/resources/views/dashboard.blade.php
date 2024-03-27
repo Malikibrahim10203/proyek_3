@@ -33,12 +33,15 @@
         <div class="menu-dashboard mt-5">
             <div class="kamera">
                 <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-camera icon-menu"></i></button>
+                <p class="mt-2">Camera</p>
             </div>
             <div class="kalkulator">
                 <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-calculator icon-menu"></i></button>
+                <p class="mt-2">BMI</p>
             </div>
             <div class="book">
                 <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-book-open icon-menu"></i></button>
+                <p class="mt-2">FoodBook</p>
             </div>
         </div>
         <div class="menu-dashboard mt-5">
