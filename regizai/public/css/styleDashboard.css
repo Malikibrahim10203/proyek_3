@@ -79,13 +79,34 @@ html, body {
 }
 
 .area-article {
+    max-height: 120px;
+    border: 1px solid #ddd;
     display: flex;
-    width: 50vh;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
-.article-1 {
-    width: 30vh;
-    height: 15vh;
+.area-article::-webkit-scrollbar {
+    width: 0;
+}
+
+.area-article .article-1 {
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    margin-right: 2px;
     background-color: #734597;
+}
+
+.wrap-menu {
+    display: flex;
+}
+
+.logout {
+    background-color: transparent;
+    height: 15vh;
+}
+
+.logout-logo {
+    font-size: 20pt;
 }

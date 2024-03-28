@@ -25,38 +25,62 @@
             <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-book side-book"></i></i></button>
         </div>
     </div>
-    <div class="area-content">
-        <div class="text-dashboard">
-            <h2>Hello, Name</h2>
-            <p>Dashboard Regizai...</p>
-        </div>
-        <div class="menu-dashboard mt-5">
-            <div class="kamera">
-                <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-camera icon-menu"></i></button>
-                <p class="mt-2">Camera</p>
+    <div class="wrap-menu">
+        <div class="area-content">
+            <div class="text-dashboard">
+                <h2>Hello, Name</h2>
+                <p>Dashboard Regizai...</p>
             </div>
-            <div class="kalkulator">
-                <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-calculator icon-menu"></i></button>
-                <p class="mt-2">BMI</p>
+            <div class="menu-dashboard mt-5">
+                <div class="kamera">
+                    <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-camera icon-menu"></i></button>
+                    <p class="mt-2">Camera</p>
+                </div>
+                <div class="kalkulator">
+                    <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-calculator icon-menu"></i></button>
+                    <p class="mt-2">BMI</p>
+                </div>
+                <div class="book">
+                    <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-book-open icon-menu"></i></button>
+                    <p class="mt-2">FoodBook</p>
+                </div>
             </div>
-            <div class="book">
-                <button type="button" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-book-open icon-menu"></i></button>
-                <p class="mt-2">FoodBook</p>
+            <div class="menu-dashboard mt-5">
+                <button type="button" class="btn square-menu-cpkalori mr-3"></button>
+                <button type="button" class="btn square-menu-healtyfood"></button>
+            </div>
+            <div class="area-article mt-5">
+                <div class="article-1 mr-2">
+
+                </div>
+                <div class="article-1 mr-2">
+
+                </div>
+                <div class="article-1 mr-2">
+
+                </div>
+                <div class="article-1 mr-2">
+                    
+                </div>
+                <div class="article-1 mr-2">
+                    
+                </div>
+                <div class="article-1 mr-2">
+                    
+                </div>
+                <div class="article-1 mr-2">
+                    
+                </div>
+                <div class="article-1 mr-2">
+                    
+                </div>
+                <div class="article-1 mr-2">
+                    
+                </div>
             </div>
         </div>
-        <div class="menu-dashboard mt-5">
-            <button type="button" class="btn square-menu-cpkalori mr-3"></button>
-            <button type="button" class="btn square-menu-healtyfood"></button>
-        </div>
-        <div class="area-article mt-5">
-            <a href="http://" class="btn article-1 mr-3"></a>
-            <a href="http://" class="btn article-1 mr-3"></a>
-            <a href="http://" class="btn article-1 mr-3"></a>
-            <a href="http://" class="btn article-1 mr-3"></a>
-            <a href="http://" class="btn article-1 mr-3"></a>
-            <a href="http://" class="btn article-1 mr-3"></a>
-            <a href="http://" class="btn article-1 mr-3"></a>
-            <a href="http://" class="btn article-1 mr-3"></a>
+        <div class="mt-5">
+            <button type="button" class="btn mr-4 logout"><i class="fa-solid fa-right-from-bracket logout-logo"></i></button>
         </div>
     </div>
 </body>
