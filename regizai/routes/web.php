@@ -25,6 +25,10 @@ Route::get('/dashboard', function() {
     return view('dashboard');
 });
 
+Route::get('/bookfood', function() {
+    return view('bookfood');
+});
+
 Route::get('/login', function() {
     return view('login');
 });
