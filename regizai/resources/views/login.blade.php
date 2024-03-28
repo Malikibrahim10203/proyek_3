@@ -48,14 +48,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-icon">
-        <div class="area-bingkai-atas">
-            <img class="bingkai-atas" src="{{url('/img/atas.png')}}" alt="Image"/>
-        </div>
-        <div class="area-bingkai-bawah">
-            <img class="bingkai-bawah" src="{{url('/img/bawah.png')}}" alt="Image"/>
-        </div>
-    </div>
+    
     
 </body>
 </html>

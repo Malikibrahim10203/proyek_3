@@ -1,11 +1,12 @@
 body {
-    background-color: #734597 !important;
+    background-image: url('../img/bg-login.png');
     height: 100vh;
     width: 100%;
     font-family: 'Poppins';
     padding: 10px;
     display: flex; /* kesamping */
-  }
+    background-size: 215vh 100vh;
+}
 
 .area-judul h1 {
     color: white;
@@ -15,18 +16,18 @@ body {
 }
 
 .area-deskripsi{
-    font-size:medium
+    font-size: medium;
     font-weight: 200;
     color: white;
 }
 
 .area-input {
     width: 70vh;
-    height: 20vh;
+    height: 18vh;
 }
 
 .input {
-    height: 10vh;
+    height: 8vh;
 }
 
 .logo {
@@ -57,7 +58,7 @@ body {
 }
 
 .bg-icon{
-    margin-right: 80vh;
+    margin-left: 102vh;
 }
 
 .bingkai-bawah{
@@ -65,3 +66,6 @@ body {
     height: 30vh;
 }
 
+.area-bingkai-bawah {
+    margin-top: 100%;
+}
