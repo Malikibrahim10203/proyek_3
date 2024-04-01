@@ -41,5 +41,8 @@ Route::get('/signup', function() {
     return view('signup');
 });
 
+Route::get('/catatan', function() {
+    return view('catatan');
+});
 
 
