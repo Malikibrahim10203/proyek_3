@@ -37,3 +37,7 @@ Route::get('/login', function() {
 Route::get('/choosegender', function() {
     return view('chooseGender');
 });
+
+Route::get('/profile', function(){
+    return view('profile');
+});
