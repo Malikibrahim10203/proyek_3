@@ -39,9 +39,9 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('/biodata', function() {
         return view('biodata');
     });
-    
+
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
-    
+
     Route::get('/bookfood', function() {
         return view('bookfood');
     });
