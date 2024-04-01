@@ -13,22 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/biodata', function() {
-    return view('biodata');
-});
 
-Route::get('/dashboard', function() {
-    return view('dashboard');
-});
+Route::get('/', 'App\Http\Controllers\LoginController@login')->name('login');
 
-Route::get('/bookfood', function() {
-    return view('bookfood');
-});
+Route::post('/actionlogin', 'App\Http\Controllers\LoginController@actionLogin');
+
+Route::get('/logout', 'App\Http\Controllers\LoginController@actionLogout');
 
 Route::get('/login', function() {
     return view('login');
+});
+
+
+Route::group(['middleware' => ['auth']], function()
+{
+    Route::get('/biodata', function() {
+        return view('biodata');
+    });
+    
+    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
+    
+    Route::get('/bookfood', function() {
+        return view('bookfood');
+    });
 });
