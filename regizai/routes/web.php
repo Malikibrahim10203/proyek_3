@@ -25,7 +25,6 @@ Route::get('/login', function() {
     return view('login');
 });
 
-<<<<<<< HEAD
 
 Route::group(['middleware' => ['auth']], function()
 {
@@ -39,7 +38,7 @@ Route::group(['middleware' => ['auth']], function()
         return view('bookfood');
     });
 });
-=======
+
 Route::get('/calculator', function() {
     return view('calculator');
 });
@@ -47,7 +46,3 @@ Route::get('/calculator', function() {
 Route::get('/signup', function() {
     return view('signup');
 });
-
-
-
->>>>>>> origin/firgiansyah
