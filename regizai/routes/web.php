@@ -13,27 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/biodata', function() {
-    return view('biodata');
-});
 
-Route::get('/dashboard', function() {
-    return view('dashboard');
-});
+Route::get('/', 'App\Http\Controllers\LoginController@login')->name('login');
 
-Route::get('/bookfood', function() {
-    return view('bookfood');
-});
+Route::post('/actionlogin', 'App\Http\Controllers\LoginController@actionLogin');
+
+Route::get('/logout', 'App\Http\Controllers\LoginController@actionLogout');
 
 Route::get('/login', function() {
     return view('login');
 });
 
 
+<<<<<<< HEAD
 Route::get('/choosegender', function() {
     return view('chooseGender');
 });
@@ -41,3 +34,25 @@ Route::get('/choosegender', function() {
 Route::get('/profile', function(){
     return view('profile');
 });
+=======
+Route::group(['middleware' => ['auth']], function()
+{
+    Route::get('/biodata', function() {
+        return view('biodata');
+    });
+    
+    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
+    
+    Route::get('/bookfood', function() {
+        return view('bookfood');
+    });
+});
+
+Route::get('/calculator', function() {
+    return view('calculator');
+});
+
+Route::get('/signup', function() {
+    return view('signup');
+});
+>>>>>>> 76facf6e75b92aaa926e9419eb4cf72dd7e69b81

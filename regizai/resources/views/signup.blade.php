@@ -32,25 +32,30 @@
                 </div>
             </div>
             <div class="area-form">
-                <form action="{{ url('/actionlogin') }}" method="post">
-                    @csrf
+                <form action="" method="post">
                     <div class="area-input">
                         <div class="input-group mb-1">
-                            <input class="form-control form-control-lg mt-4 input" type="email" name="email" placeholder="Email">
+                            <input class="form-control mt-4 input" type="email" placeholder="Email">
                         </div>
                         <div class="input-group mb-1">
-                            <input class="form-control form-control-lg input mt-4" type="password" name="password" placeholder="Password">
+                            <input class="form-control  mt-4" type="password" placeholder="Password">
                         </div>
                     </div>
                      <div class="area-button mt-4">
-                        <button type="submit" class="btn btn-light mt-3 btn-login">Login</button>
+                        <button type="button" class="btn btn-light mt-3 btn-login">Login</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <div class="bg-icon">
+        <div class="area-bingkai-atas">
+            <img class="bingkai-atas" src="{{url('/img/atas.png')}}" alt="Image"/>
+        </div>
+        <div class="area-bingkai-bawah">
+            <img class="bingkai-bawah" src="{{url('/img/bawah.png')}}" alt="Image"/>
+        </div>
+    </div>
     
-    <img src="{{ asset('/img/icon-food.png') }}" class="icon-item" alt="">
-
 </body>
 </html>
