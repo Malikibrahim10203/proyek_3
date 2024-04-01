@@ -32,3 +32,14 @@ Route::get('/bookfood', function() {
 Route::get('/login', function() {
     return view('login');
 });
+
+Route::get('/calculator', function() {
+    return view('calculator');
+});
+
+Route::get('/signup', function() {
+    return view('signup');
+});
+
+
+
