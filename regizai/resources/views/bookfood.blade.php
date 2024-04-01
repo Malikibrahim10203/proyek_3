@@ -19,35 +19,18 @@
 <body>
     <div class="area-sidebar">
         <div class="sidebar-menu">
-            <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-user"></i></button>
-            <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-house-chimney"></i></button>
-            <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-bell"></i></button>
-            <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-book side-book"></i></i></button>
+            <a href="#" class="btn btn-transparent mt-4"><i class="fa-solid fa-user"></i></a>
+            <a href="{{ url('/dashboard') }}" class="btn btn-transparent mt-4"><i class="fa-solid fa-house-chimney"></i></a>
+            <a href="" class="btn btn-transparent mt-4"><i class="fa-solid fa-bell"></i></a>
+            <a href="{{ url('/bookfood') }}" class="btn btn-transparent mt-4"><i class="fa-solid fa-book side-book"></i></a>
         </div>
     </div>
     <div class="wrap-menu">
+        <form action="/bookfood" method="get" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
         <div class="list-food mt-5">
-            <div class="card mr-3" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url('/img/ayam-geprek.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title" style="font-size: 10pt;"><i class="fa-solid fa-tags" style="font-size: 15pt;"></i> Ayam Geprek</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="card mr-3" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url('/img/ayam-geprek.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title" style="font-size: 10pt;"><i class="fa-solid fa-tags" style="font-size: 15pt;"></i> Ayam Geprek</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="card mr-3" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url('/img/ayam-geprek.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title" style="font-size: 10pt;"><i class="fa-solid fa-tags" style="font-size: 15pt;"></i> Ayam Geprek</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
             <div class="card mr-3" style="width: 13rem;">
                 <img class="card-img-top" src="{{ url('/img/ayam-geprek.jpg') }}" alt="Card image cap">
                 <div class="card-body">

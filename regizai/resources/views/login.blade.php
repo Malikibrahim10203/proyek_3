@@ -32,23 +32,25 @@
                 </div>
             </div>
             <div class="area-form">
-                <form action="" method="post">
+                <form action="{{ url('/actionlogin') }}" method="post">
+                    @csrf
                     <div class="area-input">
                         <div class="input-group mb-1">
-                            <input class="form-control mt-4 input" type="email" placeholder="Email">
+                            <input class="form-control form-control-lg mt-4 input" type="email" name="email" placeholder="Email">
                         </div>
                         <div class="input-group mb-1">
-                            <input class="form-control  mt-4" type="password" placeholder="Password">
+                            <input class="form-control form-control-lg input mt-4" type="password" name="password" placeholder="Password">
                         </div>
                     </div>
                      <div class="area-button mt-4">
-                        <button type="button" class="btn btn-light mt-3 btn-login">Login</button>
+                        <button type="submit" class="btn btn-light mt-3 btn-login">Login</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     
-    
+    <img src="{{ asset('/img/icon-food.png') }}" class="icon-item" alt="">
+
 </body>
 </html>

@@ -5,7 +5,7 @@ body {
     font-family: 'Poppins';
     padding: 10px;
     display: flex; /* kesamping */
-    background-size: 215vh 100vh;
+    background-size: 213vh 100vh;
 }
 
 .area-judul h1 {
@@ -17,17 +17,18 @@ body {
 
 .area-deskripsi{
     font-size: medium;
-    font-weight: 200;
+    font-weight: 400;
     color: white;
 }
 
 .area-input {
     width: 70vh;
-    height: 18vh;
+    height: 20vh;
 }
 
-.input {
-    height: 8vh;
+input {
+    height: 10vh;
+    font-family: FontAwesome;
 }
 
 .logo {
@@ -40,7 +41,7 @@ body {
 }
 
 .btn-login{
-    width: 30vh;
+    width: 70vh;
     height: 6vh;
 }
 
@@ -48,7 +49,7 @@ body {
     background-image: url("../img/");
     background-size: contain;
     background-repeat: no-repeat;
-    top: 90%;
+    margin-top: 10vh;
 }
 
 .bingkai-atas {
@@ -68,4 +69,11 @@ body {
 
 .area-bingkai-bawah {
     margin-top: 100%;
+}
+
+.icon-item {
+    width: 50vh;
+    height: 50vh;
+    margin-top: 30vh;
+    margin-left: 50vh;
 }
