@@ -32,3 +32,8 @@ Route::get('/bookfood', function() {
 Route::get('/login', function() {
     return view('login');
 });
+
+
+Route::get('/choosegender', function() {
+    return view('chooseGender');
+});
