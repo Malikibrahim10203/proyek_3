@@ -26,7 +26,7 @@ Route::get('/login', function() {
 });
 
 
-<<<<<<< HEAD
+
 Route::get('/choosegender', function() {
     return view('chooseGender');
 });
@@ -34,15 +34,15 @@ Route::get('/choosegender', function() {
 Route::get('/profile', function(){
     return view('profile');
 });
-=======
+
 Route::group(['middleware' => ['auth']], function()
 {
     Route::get('/biodata', function() {
         return view('biodata');
     });
-    
+
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
-    
+
     Route::get('/bookfood', function() {
         return view('bookfood');
     });
@@ -55,4 +55,4 @@ Route::get('/calculator', function() {
 Route::get('/signup', function() {
     return view('signup');
 });
->>>>>>> 76facf6e75b92aaa926e9419eb4cf72dd7e69b81
+
