@@ -12,8 +12,26 @@ html, body {
 
 .group-1{
     display: flex;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 70vh;
+}
+
+.judul {
+    font-size: 100%;
+}
+
+.wraph {
+    display: flex;
+}
+
+.kalori {
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.goals {
+    margin-left: 3%;
+    margin-top: 4%;
 }
 
 .titik-tiga{
