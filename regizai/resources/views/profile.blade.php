@@ -55,6 +55,20 @@
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
+
+                </div>
+                <div class="goals">
+                    <p> Goals </p>
+                </div>
+            <div class="wraph">
+                <div class="gambar-goals">
+                    <img src="{{URL::asset('/img/goals.png')}}" alt="profile Pic" height="80" width="80">
+                </div>
+                <div class="kalori">
+                    <h1 class= "judul"> Kalori Harian </h1>
+                    <p> 2550 Kkal </p>
+            </div>
+
                 </div>
             </div>
         </div>
