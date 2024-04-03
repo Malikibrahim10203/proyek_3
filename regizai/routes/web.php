@@ -54,12 +54,10 @@ Route::get('/calculator', function() {
 Route::get('/signup', function() {
     return view('signup');
 });
-<<<<<<< HEAD
-=======
+
 
 Route::get('/catatan', function() {
     return view('catatan');
 });
 
 
->>>>>>> firgiansyah

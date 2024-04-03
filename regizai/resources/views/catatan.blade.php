@@ -16,21 +16,39 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
 <body>
-    <div class="center-content mt-2">
-        <div class="header">
-            <h1>Catatan Harian</h1>
-        </div>
-        <div class="area-card">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Nasi</h5>
-                  <div class="wrap-detail">
-                    <h6 class="card-subtitle mb-2 text-muted mr-5">calories</h6>
-                    <h6 class="card-subtitle mb-2 text-muted">01/04/2024 </h6>
-                  </div>
+    <div class="keseluruhan">
+        <div class="wraph">
+            <div class="catatan">
+                <h1> Catatan Harian </h1>
+            </div>
+            <div class="content-isi">
+                <div class="nasi-campur mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Nasi Campur</h5>
+                          <p class="card-text"> 355 Calories</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nasi-campur mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Nasi Campur</h5>
+                          <p class="card-text"> 355 Calories</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nasi-campur mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Nasi Campur</h5>
+                          <p class="card-text"> 355 Calories</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>
