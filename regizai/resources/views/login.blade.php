@@ -35,6 +35,7 @@
                 <form action="{{ url('/actionlogin') }}" method="post">
                     @csrf
                     <div class="area-input">
+<<<<<<< HEAD
                         <div class="input-group mb-1">
                             <input class="form-control form-control-lg mt-4 input" type="email" name="email" placeholder="Email">
                         </div>
@@ -44,6 +45,20 @@
                     </div>
                      <div class="area-button mt-4">
                         <button type="submit" class="btn btn-light mt-3 btn-login">Login</button>
+=======
+                        <div class="input-with-icon mb-1">
+                            <span class="input-icon"><i class="icon-fontawesome fa-regular fa-envelope"></i></span>
+                            <input class="form-control form-control-lg mt-4 input email" type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="input-with-icon mb-1">
+                            <span class="input-icon"><i class="icon-fontawesome fa-solid fa-fingerprint"></i></span>
+                            <input class="form-control form-control-lg input mt-4" type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                     <div class="area-button tombol mt-4">
+                        <button type="submit" class="btn btn-light mt-3 btn-login">Login</button>
+                        <a href="{{ url('/signup') }}" class="btn btn-light mt-3 btn-signup">SignUp</a>
+>>>>>>> main
                     </div>
                 </form>
             </div>

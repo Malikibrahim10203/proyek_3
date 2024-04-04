@@ -45,6 +45,11 @@ input {
     height: 6vh;
 }
 
+.btn-signup{
+    width: 30vh;
+    height: 6vh;
+}
+
 .wrap-content {
     background-image: url("../img/");
     background-size: contain;
@@ -76,4 +81,37 @@ input {
     height: 50vh;
     margin-top: 30vh;
     margin-left: 50vh;
+<<<<<<< HEAD
+=======
+}
+
+.tombol {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    padding-left: 6vh; /* Sesuaikan sesuai ukuran ikon */
+}
+
+.input-icon {
+    position: absolute;
+    left: 2vh; /* Sesuaikan sesuai dengan posisi ikon */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-fontawesome {
+    color: gray;
+>>>>>>> main
 }

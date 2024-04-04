@@ -34,8 +34,26 @@ Route::get('/profile', function(){
     return view('profile');
 });
 
+<<<<<<< HEAD
 Route::group(['middleware' => ['auth']], function()
 {
+=======
+Route::get('/signup', function() {
+    return view('signup');
+});
+
+
+Route::group(['middleware' => ['auth']], function()
+{
+    Route::get('/choosegender', function() {
+        return view('chooseGender');
+    });
+
+    Route::get('/profile', function(){
+        return view('profile');
+    });
+
+>>>>>>> main
     Route::get('/biodata', function() {
         return view('biodata');
     });
@@ -45,6 +63,7 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('/bookfood', function() {
         return view('bookfood');
     });
+<<<<<<< HEAD
 });
 
 Route::get('/calculator', function() {
@@ -61,3 +80,19 @@ Route::get('/catatan', function() {
 });
 
 
+=======
+
+    Route::get('/calculator', function() {
+        return view('calculator');
+    });
+
+    Route::get('/catatan', function() {
+        return view('catatan');
+    });
+
+    Route::get('/hasil-analisis', function(){
+        return view('hasil');
+    });
+
+});
+>>>>>>> main
