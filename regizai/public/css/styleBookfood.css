@@ -48,3 +48,7 @@ html, body {
 .list-food {
     display: flex;
 }
+
+.wrap-menu {
+    margin-top: 10vh;
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
 
-    <link rel="stylesheet" href="{{ asset('css/styleLogin.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styleSignup.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -32,25 +32,30 @@
                 </div>
             </div>
             <div class="area-form">
-                <form action="{{ url('/actionlogin') }}" method="post">
-                    @csrf
+                <form action="" method="post">
                     <div class="area-input">
                         <div class="input-group mb-1">
-                            <input class="form-control form-control-lg mt-4 input" type="email" name="email" placeholder="Email">
+                            <input class="form-control mt-4 input" type="email" placeholder="Email">
                         </div>
                         <div class="input-group mb-1">
-                            <input class="form-control form-control-lg input mt-4" type="password" name="password" placeholder="Password">
+                            <input class="form-control  mt-4" type="password" placeholder="Password">
                         </div>
                     </div>
                      <div class="area-button mt-4">
-                        <button type="submit" class="btn btn-light mt-3 btn-login">Login</button>
+                        <button type="button" class="btn btn-light mt-3 btn-login">Login</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <div class="bg-icon">
+        <div class="area-bingkai-atas">
+            <img class="bingkai-atas" src="{{url('/img/atas.png')}}" alt="Image"/>
+        </div>
+        <div class="area-bingkai-bawah">
+            <img class="bingkai-bawah" src="{{url('/img/bawah.png')}}" alt="Image"/>
+        </div>
+    </div>
     
-    <img src="{{ asset('/img/icon-food.png') }}" class="icon-item" alt="">
-
 </body>
 </html>
