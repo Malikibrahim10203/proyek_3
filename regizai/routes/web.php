@@ -44,7 +44,7 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('/choosegender', function() {
         return view('chooseGender');
     });
-    
+
     Route::get('/profile', function(){
         return view('profile');
     });
@@ -58,13 +58,17 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('/bookfood', function() {
         return view('bookfood');
     });
-    
+
     Route::get('/calculator', function() {
         return view('calculator');
     });
 
     Route::get('/catatan', function() {
         return view('catatan');
+    });
+
+    Route::get('/hasil-analisis', function(){
+        return view('hasil');
     });
 
 });
