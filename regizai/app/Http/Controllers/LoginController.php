@@ -34,9 +34,15 @@ class LoginController extends Controller
         );
 
         $kredensil = $request->only('email', 'password');
+        
         if(Auth::attempt($kredensil))
         {
-            return redirect('/dashboard');
+            $user = Auth::user();
+            if ($user->gender == "male" || $user->gender == "female") {
+                return redirect('dashboard');
+            } else if ($user->gender == null) {
+                return redirect('choosegender');
+            }
         }
         return Redirect::to('/')->with('alert-gagal','Username atau Password salah!');
     }

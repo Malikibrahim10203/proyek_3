@@ -23,34 +23,34 @@
             <h1 class="judul">CHOOSE GENDER</h1>
             <p class="judul-dalam">Just only two</p>
         </div>
-       <div class="content-gender">
-            <div class="icon1 mr-5">
-                <img src="{{URL::asset('/img/gcowo.jpg')}}" alt="profile Pic" height="200" width="200">
-                <p class="description">Male</p>
+        <form action="{{ url('/biodata')}}" method="POST">
+            @csrf
+            <div class="content-gender">  
+                <input name="email" value="{{ $email }}" hidden>
+                <input name="password" value="{{ $password }}" hidden>
+                <div class="icon1 mr-5">
+                    <img src="{{URL::asset('/img/gcowo.jpg')}}" alt="profile Pic" height="200" width="200">
+                    <p class="description">Male</p>
 
-                <div class="radio">
-
-                     <input type="radio" aria-label="Radio button for following text input">
-
-                </div>
-
-            </div>
-            <div class="ml-5">
-                <img src="{{URL::asset('/img/gcewe.jpg')}}" alt="profile Pic" height="200" width="200">
-                <p class="description">Female</p>
-
-                <div class="radio">
-
-                     <input type="radio" aria-label="Radio button for following text input">
+                    <div class="radio">
+                        <input type="radio" id="html" name="gender" value="male">
+                    </div>
 
                 </div>
+                <div class="ml-5">
+                    <img src="{{URL::asset('/img/gcewe.jpg')}}" alt="profile Pic" height="200" width="200">
+                    <p class="description">Female</p>
 
+                    <div class="radio">
+                        <input type="radio" id="css" name="gender" value="female">
+                    </div>
+
+                </div>
             </div>
-       </div>
-        <div class="buton">
-            <button class="btn btn-primary tombol" type="submit">Next</button>
-
-        </div>
+            <div class="buton">
+                <button class="btn btn-primary tombol" type="submit">Next</button>
+            </div>   
+        </form>
     </div>
 
 </body>

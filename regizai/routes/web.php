@@ -25,35 +25,32 @@ Route::get('/login', function() {
     return view('login');
 });
 
-
-Route::get('/choosegender', function() {
-    return view('chooseGender');
-});
+Route::post('/choosegender', 'App\Http\Controllers\RegisterController@gender');
+Route::post('/biodata', 'App\Http\Controllers\RegisterController@biodata');
 
 Route::get('/profile', function(){
     return view('profile');
 });
 
-Route::get('/signup', function() {
-    return view('signup');
-});
+Route::get('/signup', 'App\Http\Controllers\RegisterController@register');
+Route::post('/actionsignup', 'App\Http\Controllers\RegisterController@actionRegister');
+
+Route::get('/choosegender', 'App\Http\Controllers\RegisterController@gender')->name('choosegender');
+Route::get('/biodata', 'App\Http\Controllers\RegisterController@biodata')->name('biodata');
+
+Route::post('/choosegender', 'App\Http\Controllers\RegisterController@gender');
+Route::post('/biodata', 'App\Http\Controllers\RegisterController@biodata');
+
 
 
 Route::group(['middleware' => ['auth']], function()
 {
-    Route::get('/choosegender', function() {
-        return view('chooseGender');
-    });
 
     Route::get('/profile', function(){
         return view('profile');
     });
 
-    Route::get('/biodata', function() {
-        return view('biodata');
-    });
-
-    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
+    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
 
     Route::get('/bookfood', function() {
         return view('bookfood');

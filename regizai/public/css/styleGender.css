@@ -4,10 +4,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.content-perent {
+    padding: 20vh;
 }
 
 .content-text {
-margin-bottom: 30%;
+margin-bottom: 20%;
 }
 
 .judul-dalam {
@@ -25,7 +30,7 @@ margin-bottom: 30%;
 }
 
 .content-gender {
-    margin-bottom: 40%;
+    margin-bottom: 20%;
     display: flex;
 }
 

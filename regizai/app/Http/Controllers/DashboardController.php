@@ -19,7 +19,12 @@ class DashboardController extends Controller
         {
             return redirect('/');
         } else {
-            return view('dashboard', ['name' => $name]);
+            $user = Auth::user();
+            if ($user->gender == "male" || $user->gender == "female") {
+                return view('dashboard', ['name' => $name]);
+            } else if ($user->gender == null) {
+                return redirect('choosegender');
+            }
         }
     }
 }

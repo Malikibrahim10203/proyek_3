@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="area-form">
-                <form action="{{ url('/actionsignup') }}" method="post">
+                <form action="{{ url('/choosegender') }}" method="post">
                     @csrf
                     <div class="area-input">
                         <div class="input-with-icon mb-1">
