@@ -15,7 +15,7 @@ class RegisterController extends Controller
     //
     public function register()
     {
-        return view('signup');
+        return view('auth.signup');
     }
 
     public function gender(Request $request)
@@ -23,7 +23,7 @@ class RegisterController extends Controller
         $email = $request->email;
         $password = $request->password;
 
-        return view('chooseGender', ["email"=>$email, "password"=>$password]);
+        return view('auth.chooseGender', ["email"=>$email, "password"=>$password]);
     }
 
     public function biodata(Request $request)
@@ -32,7 +32,7 @@ class RegisterController extends Controller
         $password = $request->password;
         $gender = $request->gender;
         
-        return view('biodata', ["email"=>$email, "password"=>$password, "gender"=>$gender]);
+        return view('auth.biodata', ["email"=>$email, "password"=>$password, "gender"=>$gender]);
     }
 
     public function actionRegister(Request $request)
@@ -47,7 +47,14 @@ class RegisterController extends Controller
             'height' => $request->height,
         ]);
 
-        Session::flash('message', 'Register Berhasil. Akun Anda sudah Aktif silahkan Login menggunakan username dan password.');
-        return redirect('signup');
+        $user = Auth::user()->id;
+
+        if ($user == NULL) {
+            Session::flash('message', 'Register Berhasil. Akun Anda sudah Aktif silahkan Login menggunakan username dan password.');
+            return redirect('login');
+        } else {
+            Session::flash('message', 'Register Berhasil. Akun Anda sudah Aktif silahkan Login menggunakan username dan password.');
+            return redirect('dashboard');
+        }
     }
 }

@@ -19,41 +19,37 @@
     <div class="keseluruhan">
         <div class="wrap">
             <div class="group-1">
+                <div class="kembali">
+                    <a href="{{ url('dashboard') }}"><i class="fas fa-arrow-left"></i></a>
+                </div>
                 <div class="foto">
                     <img src="{{URL::asset('/img/gcowo.jpg')}}" alt="profile Pic" height="100" width="100">
                 </div>
                 <div class="nama-profile">
-                    <h1 class="nama">Ibrahim Afham</h1>
+                    <h1 class="nama">{{ $user->name }}</h1>
                     <p class="text-profile">profile</p>
                 </div>
                 <div class="titik-tiga">
                     <i class="fa-solid fa-ellipsis-vertical titik-tiga"></i>
                 </div>
-
             </div>
             <div class="group-2">
-                <div class="name">
-                    <p> Name </p>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                    </div>
-                </div>
                 <div class="umur">
                     <p> Umur </p>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->umur}}" disabled>
                     </div>
                 </div>
                 <div class="width">
                     <p> Width </p>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->width}}" disabled>
                     </div>
                 </div>
                 <div class="height">
                     <p> Height </p>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->height}}" disabled>
                     </div>
                 </div>
             </div>

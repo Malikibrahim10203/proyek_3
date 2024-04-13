@@ -28,9 +28,6 @@ Route::get('/login', function() {
 Route::post('/choosegender', 'App\Http\Controllers\RegisterController@gender');
 Route::post('/biodata', 'App\Http\Controllers\RegisterController@biodata');
 
-Route::get('/profile', function(){
-    return view('profile');
-});
 
 Route::get('/signup', 'App\Http\Controllers\RegisterController@register');
 Route::post('/actionsignup', 'App\Http\Controllers\RegisterController@actionRegister');
@@ -46,26 +43,24 @@ Route::post('/biodata', 'App\Http\Controllers\RegisterController@biodata');
 Route::group(['middleware' => ['auth']], function()
 {
 
-    Route::get('/profile', function(){
-        return view('profile');
-    });
+    Route::get('/profile', 'App\Http\Controllers\ProfileController@index')->name('profile');
 
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
 
     Route::get('/bookfood', function() {
-        return view('bookfood');
+        return view('page/bookfood');
     });
 
     Route::get('/calculator', function() {
-        return view('calculator');
+        return view('page/calculator');
     });
 
     Route::get('/catatan', function() {
-        return view('catatan');
+        return view('page/catatan');
     });
 
     Route::get('/hasil-analisis', function(){
-        return view('hasil');
+        return view('page/hasil');
     });
 
 });

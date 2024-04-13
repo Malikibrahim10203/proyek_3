@@ -19,10 +19,10 @@
 <body>
     <div class="area-sidebar">
         <div class="sidebar-menu">
-            <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-user"></i></button>
-            <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-house-chimney"></i></button>
-            <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-bell"></i></button>
-            <button type="button" class="btn btn-transparent mt-4"><i class="fa-solid fa-book side-book"></i></i></button>
+            <a href="{{ ROUTE('profile') }}"class="btn btn-transparent mt-4"><i class="fa-solid fa-user"></i></a>
+            <a href="{{ url('/dashboard') }}" class="btn btn-transparent mt-4"><i class="fa-solid fa-house-chimney"></i></a>
+            <a href="" class="btn btn-transparent mt-4"><i class="fa-solid fa-bell"></i></a>
+            <a href="{{ url('/bookfood') }}" class="btn btn-transparent mt-4"><i class="fa-solid fa-book side-book"></i></a>
         </div>
     </div>
     <div class="wrap-menu">

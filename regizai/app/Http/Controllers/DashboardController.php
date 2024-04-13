@@ -20,10 +20,14 @@ class DashboardController extends Controller
             return redirect('/');
         } else {
             $user = Auth::user();
-            if ($user->gender == "male" || $user->gender == "female") {
-                return view('dashboard', ['name' => $name]);
-            } else if ($user->gender == null) {
-                return redirect('choosegender');
+            if ($user->email != NULL) {
+                return view('page.dashboard', ['name' => $name]);
+            } else {
+                if ($user->gender == "male" || $user->gender == "female") {
+                    return view('page.dashboard', ['name' => $name]);
+                } else if ($user->gender == null) {
+                    return redirect('choosegender');
+                }
             }
         }
     }

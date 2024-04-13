@@ -33,7 +33,7 @@
                     <p class="description">Male</p>
 
                     <div class="radio">
-                        <input type="radio" id="html" name="gender" value="male">
+                        <input type="radio" id="html" name="gender" value="male" required>
                     </div>
 
                 </div>
@@ -42,7 +42,7 @@
                     <p class="description">Female</p>
 
                     <div class="radio">
-                        <input type="radio" id="css" name="gender" value="female">
+                        <input type="radio" id="css" name="gender" value="female" required>
                     </div>
 
                 </div>

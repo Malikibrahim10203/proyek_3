@@ -45,3 +45,9 @@ margin-bottom: 20%;
     align-items: center;
     justify-content: center;
 }
+
+.btn-primary {
+    width: 20vh;
+    background-color: #734597 !important;
+    border-color: #734597 !important;
+}
