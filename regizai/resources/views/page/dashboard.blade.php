@@ -25,7 +25,7 @@
             <a href="{{ url('/bookfood') }}" class="btn btn-transparent mt-4"><i class="fa-solid fa-book side-book"></i></a>
         </div>
     </div>
-    <div class="wrap-menu">
+    <div class="wrap-menu ml-5">
         <div class="area-content">
             <div class="text-dashboard">
                 <h2>Hello, {{ Auth::User()->name }}</h2>
@@ -33,11 +33,11 @@
             </div>
             <div class="menu-dashboard mt-5">
                 <div class="kamera">
-                    <a href="http://" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-camera icon-menu"></i></a>
+                    <a href="{{ url('') }}" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-camera icon-menu"></i></a>
                     <p class="mt-2">Camera</p>
                 </div>
                 <div class="kalkulator">
-                    <a href="http://" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-calculator icon-menu"></i></a>
+                    <a href="{{ url('/calculator') }}" class="btn btn-outline-secondary mr-4"><i class="fa-solid fa-calculator icon-menu"></i></a>
                     <p class="mt-2">BMI</p>
                 </div>
                 <div class="book">
@@ -45,17 +45,26 @@
                     <p class="mt-2">FoodBook</p>
                 </div>
             </div>
-            <div class="menu-dashboard mt-5">
-                <button type="button" class="btn square-menu-cpkalori mr-3"></button>
-                <button type="button" class="btn square-menu-healtyfood"></button>
+            <div class="judul mt-3 mb-3">
+                    <h5>Artikel Makanan</h5>
+                    <p>Beragam makanan sehat ala diet</p>
             </div>
-            <div class="area-article mt-5">
-                <a href="" style="text-decoration: none; color: black;">
+            <div class="area-article mt-3">
+                <a href="" class="mr-1" style="text-decoration: none; color: black;">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <img class="card-img-top" src="{{ url('/img/nasi-campur.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Rekomendasi buah diet</h5>
+                            <p class="card-text">Sarapan pagi, Cemilan diet.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="mr-1" style="text-decoration: none; color: black;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="{{ url('/img/ayam-geprek.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Rekomendasi buah diet</h5>
+                            <p class="card-text">Sarapan pagi, Cemilan diet.</p>
                         </div>
                     </div>
                 </a>

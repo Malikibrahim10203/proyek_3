@@ -5,6 +5,7 @@ html, body {
     display: flex;
     background-image: url('../img/bg-dashboard.png');
     background-size: contain;
+    padding: 15px;
 }
 
 .area-sidebar {
@@ -80,6 +81,7 @@ html, body {
 }
 
 .wrap-menu {
+    width: 60vh;
     display: flex;
 }
 
@@ -93,5 +95,14 @@ p, .card-text {
 }
 
 .logout {
-    margin-left: 30%;
+    margin-left: 100vh;
+}
+
+.area-article {
+    display: flex;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 150px;
 }
