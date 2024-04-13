@@ -50,38 +50,20 @@
                 <button type="button" class="btn square-menu-healtyfood"></button>
             </div>
             <div class="area-article mt-5">
-                <div class="article-1 mr-2">
-
-                </div>
-                <div class="article-1 mr-2">
-
-                </div>
-                <div class="article-1 mr-2">
-
-                </div>
-                <div class="article-1 mr-2">
-
-                </div>
-                <div class="article-1 mr-2">
-
-                </div>
-                <div class="article-1 mr-2">
-
-                </div>
-                <div class="article-1 mr-2">
-
-                </div>
-                <div class="article-1 mr-2">
-
-                </div>
-                <div class="article-1 mr-2">
-
-                </div>
+                <a href="" style="text-decoration: none; color: black;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="mt-5">
-            <a href="{{ url('/logout') }}" class="btn btn-outline-dark mt-5"><i class="fa-solid fa-right-from-bracket"></i></a>
-        </div>
+    </div>
+    <div class="logout">
+        <a href="{{ url('/logout') }}" class="btn btn-outline-dark mt-5"><i class="fa-solid fa-right-from-bracket"></i></a>
     </div>
 </body>
 </html>

@@ -1,10 +1,10 @@
 html, body {
+    width: 100%;
     height: 100%;
     font-family: 'Poppins';
     display: flex;
     background-image: url('../img/bg-dashboard.png');
     background-size: contain;
-
 }
 
 .area-sidebar {
@@ -79,35 +79,19 @@ html, body {
     border-radius: 10px;
 }
 
-.area-article {
-    max-height: 120px;
-    border: 1px solid #ddd;
-    display: flex;
-    overflow-x: auto;
-}
-
-.area-article::-webkit-scrollbar {
-    width: 0;
-}
-
-.area-article .article-1 {
-    min-width: 110px;
-    height: 110px;
-    line-height: 110px;
-    text-align: center;
-    margin-right: 2px;
-    background-color: #734597;
-}
-
 .wrap-menu {
     display: flex;
 }
 
-.logout {
-    background-color: transparent;
-    height: 15vh;
+
+h5, .card-title {
+    font-size: 15pt;
 }
 
-.logout-logo {
-    font-size: 20pt;
+p, .card-text {
+    font-size: 10pt;
+}
+
+.logout {
+    margin-left: 30%;
 }
