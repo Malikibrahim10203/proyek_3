@@ -63,4 +63,7 @@ Route::group(['middleware' => ['auth']], function()
         return view('page/hasil');
     });
 
+    Route::get('/artikel', function(){
+        return view('page/artikel');
+    });
 });
