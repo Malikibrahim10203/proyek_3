@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.center-content {
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.biodata {
+    font-size: 48pt;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+.description {
+    font-size: 32pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-content {
+    width: 70vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6%;
+}
+
+.tgl {
+    display: flex;
+}
+
+.kirim {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-primary {
+    width: 20vh;
+    background-color: #734597 !important;
+    border-color: #734597 !important;
+}
+
+.btn-outline-secondary {
+    width: 8vh;
+}
+
+.input-date::-webkit-inner-spin-button, .input-date::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}

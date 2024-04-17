@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.keseluruhan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-1{
+    display: flex;
+    margin-top: 6%;
+    width: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titik-tiga{
+    font-size: 20pt;
+    margin-top: 15%;
+
+}
+
+.nama-profile{
+    margin-right: 20%;
+    margin-top: 13%;
+}
+
+.foto{
+    margin-right: 5%;
+    margin-top: 12%;
+    margin-left: 8%;
+}
+
+.group-2{
+    margin-top: 10%;
+}
+
+.kembali {
+    margin-top: 17%;
+}
+
+.kembali .fas {
+    color: black;
+    font-size: 20pt;
+}

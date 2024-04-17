@@ -1,0 +1,108 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins';
+    display: flex;
+    background-image: url('../img/bg-dashboard.png');
+    background-size: contain;
+    padding: 15px;
+}
+
+.area-sidebar {
+    width: 25vh;
+    height: 100%;
+    padding: 20px;
+}
+
+.sidebar-menu {
+    width: 11vh;
+    height: 90%;
+    background-color: #734597;  
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 12%;
+}
+
+.fa-user {
+    font-size: 15pt;
+    color: white;
+}
+
+.fa-house-chimney {
+    font-size: 15pt;
+    color: white;
+}
+
+.fa-bell {
+    font-size: 15pt;
+    color: white;
+}
+
+.side-book {
+    font-size: 15pt;
+    color: white;
+}
+
+.btn-transparent {
+    background-color: transparent;
+}
+
+
+.area-content {
+    margin-top: 7%;
+}
+
+.menu-dashboard {
+    display: flex;
+}
+
+.btn-outline-secondary {
+    width: 8vh;
+    height: 8vh;
+}
+
+.icon-menu {
+    font-size: 15pt;
+    margin-top: 1.5vh;
+}
+
+.square-menu-cpkalori {
+    width: 50vh;
+    height: 15vh;
+    background-color: #734597;
+    border-radius: 10px;
+}
+
+.square-menu-healtyfood {
+    width: 50vh;
+    height: 15vh;
+    background-color: #EDEDED;
+    border-radius: 10px;
+}
+
+.wrap-menu {
+    width: 60vh;
+    display: flex;
+}
+
+
+h5, .card-title {
+    font-size: 15pt;
+}
+
+p, .card-text {
+    font-size: 10pt;
+}
+
+.logout {
+    margin-left: 100vh;
+}
+
+.area-article {
+    display: flex;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 150px;
+}
