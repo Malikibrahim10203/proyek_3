@@ -31,15 +31,19 @@
             <p class="description">Fill in your biodata</p>
         </div>
         <div class="form-content">
-            <form action="" method="post">
-                <input class="form-control form-control-lg mt-4" type="text" placeholder="Name">
+            <form action="{{ url('actionsignup') }}" method="POST">
+                @csrf
+                <input name="email" value="{{ $email }}" hidden>
+                <input name="password" value="{{ $password }}" hidden>
+                <input name="gender" value="{{ $gender }}" hidden>
+                <input class="form-control form-control-lg mt-4" type="text" name="name" placeholder="Name">
                 <div class="tgl">
-                    <input class="form-control form-control-lg input-date mt-4" type="text" id="datePicker" placeholder="Select your birth" disabled>
+                    <input class="form-control form-control-lg input-date mt-4" type="text" id="datePicker" name="birth" placeholder="Select your birth" disabled>
                     <button type="button" class="btn btn-outline-secondary mt-4 ml-2" onclick="showDp();"><i class="fa-solid fa-calendar-days"></i></button>
                 </div>
 
-                <input class="form-control form-control-lg mt-4" type="number" placeholder="Width :" min="0" max=1000>
-                <input class="form-control form-control-lg mt-4" type="number" placeholder="Height :" min="0" max=1000>
+                <input class="form-control form-control-lg mt-4" type="number" name="width" placeholder="Width :" min="0" max=1000>
+                <input class="form-control form-control-lg mt-4" type="number" name="height" placeholder="Height :" min="0" max=1000>
 
                 <div class="kirim mt-5">
                     <button class="btn btn-primary tombol" type="submit">Next</button>

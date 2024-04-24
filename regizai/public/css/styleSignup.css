@@ -1,11 +1,20 @@
 body {
+<<<<<<< HEAD
     background-color: #734597 !important;
+=======
+    background-image: url('../img/bg-login.png');
+>>>>>>> main
     height: 100vh;
     width: 100%;
     font-family: 'Poppins';
     padding: 10px;
     display: flex; /* kesamping */
+<<<<<<< HEAD
   }
+=======
+    background-size: 213vh 100vh;
+}
+>>>>>>> main
 
 .area-judul h1 {
     color: white;
@@ -15,8 +24,13 @@ body {
 }
 
 .area-deskripsi{
+<<<<<<< HEAD
     font-size:medium
     font-weight: 200;
+=======
+    font-size: medium;
+    font-weight: 400;
+>>>>>>> main
     color: white;
 }
 
@@ -25,8 +39,14 @@ body {
     height: 20vh;
 }
 
+<<<<<<< HEAD
 .input {
     height: 10vh;
+=======
+input {
+    height: 10vh;
+    font-family: FontAwesome;
+>>>>>>> main
 }
 
 .logo {
@@ -43,11 +63,23 @@ body {
     height: 6vh;
 }
 
+<<<<<<< HEAD
+=======
+.btn-signup{
+    width: 30vh;
+    height: 6vh;
+}
+
+>>>>>>> main
 .wrap-content {
     background-image: url("../img/");
     background-size: contain;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     top: 90%;
+=======
+    margin-top: 10vh;
+>>>>>>> main
 }
 
 .bingkai-atas {
@@ -57,7 +89,11 @@ body {
 }
 
 .bg-icon{
+<<<<<<< HEAD
     margin-right: 80vh;
+=======
+    margin-left: 102vh;
+>>>>>>> main
 }
 
 .bingkai-bawah{
@@ -65,3 +101,46 @@ body {
     height: 30vh;
 }
 
+<<<<<<< HEAD
+=======
+.area-bingkai-bawah {
+    margin-top: 100%;
+}
+
+.icon-item {
+    width: 50vh;
+    height: 50vh;
+    margin-top: 30vh;
+    margin-left: 50vh;
+}
+
+.tombol {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    padding-left: 6vh; /* Sesuaikan sesuai ukuran ikon */
+}
+
+.input-icon {
+    position: absolute;
+    left: 2vh; /* Sesuaikan sesuai dengan posisi ikon */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-fontawesome {
+    color: gray;
+}
+>>>>>>> main

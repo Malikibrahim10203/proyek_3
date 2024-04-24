@@ -13,25 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/biodata', function() {
-    return view('biodata');
-});
 
-Route::get('/dashboard', function() {
-    return view('dashboard');
-});
+Route::get('/', 'App\Http\Controllers\LoginController@login')->name('login');
 
-Route::get('/bookfood', function() {
-    return view('bookfood');
-});
+Route::post('/actionlogin', 'App\Http\Controllers\LoginController@actionLogin');
+
+Route::get('/logout', 'App\Http\Controllers\LoginController@actionLogout');
 
 Route::get('/login', function() {
     return view('login');
 });
+
 
 Route::get('/calculator', function() {
     return view('calculator');
@@ -46,3 +39,45 @@ Route::get('/catatan', function() {
 });
 
 
+Route::post('/choosegender', 'App\Http\Controllers\RegisterController@gender');
+Route::post('/biodata', 'App\Http\Controllers\RegisterController@biodata');
+
+
+Route::get('/signup', 'App\Http\Controllers\RegisterController@register');
+Route::post('/actionsignup', 'App\Http\Controllers\RegisterController@actionRegister');
+
+Route::get('/choosegender', 'App\Http\Controllers\RegisterController@gender')->name('choosegender');
+Route::get('/biodata', 'App\Http\Controllers\RegisterController@biodata')->name('biodata');
+
+Route::post('/choosegender', 'App\Http\Controllers\RegisterController@gender');
+Route::post('/biodata', 'App\Http\Controllers\RegisterController@biodata');
+
+
+
+Route::group(['middleware' => ['auth']], function()
+{
+
+    Route::get('/profile', 'App\Http\Controllers\ProfileController@index')->name('profile');
+
+    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
+
+    Route::get('/bookfood', function() {
+        return view('page/bookfood');
+    });
+
+    Route::get('/calculator', function() {
+        return view('page/calculator');
+    });
+
+    Route::get('/catatan', function() {
+        return view('page/catatan');
+    });
+
+    Route::get('/hasil-analisis', function(){
+        return view('page/hasil');
+    });
+
+    Route::get('/artikel', function(){
+        return view('page/artikel');
+    });
+});

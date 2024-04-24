@@ -32,30 +32,28 @@
                 </div>
             </div>
             <div class="area-form">
-                <form action="" method="post">
+                <form action="{{ url('/actionlogin') }}" method="post">
+                    @csrf
                     <div class="area-input">
-                        <div class="input-group mb-1">
-                            <input class="form-control mt-4 input" type="email" placeholder="Email">
+                        <div class="input-with-icon mb-1">
+                            <span class="input-icon"><i class="icon-fontawesome fa-regular fa-envelope"></i></span>
+                            <input class="form-control form-control-lg mt-4 input email" type="email" name="email" placeholder="Email">
                         </div>
-                        <div class="input-group mb-1">
-                            <input class="form-control  mt-4" type="password" placeholder="Password">
+                        <div class="input-with-icon mb-1">
+                            <span class="input-icon"><i class="icon-fontawesome fa-solid fa-fingerprint"></i></span>
+                            <input class="form-control form-control-lg input mt-4" type="password" name="password" placeholder="Password">
                         </div>
                     </div>
-                     <div class="area-button mt-4">
-                        <button type="button" class="btn btn-light mt-3 btn-login">Login</button>
+                     <div class="area-button tombol mt-4">
+                        <button type="submit" class="btn btn-light mt-3 btn-login">Login</button>
+                        <a href="{{ url('/signup') }}" class="btn btn-light mt-3 btn-signup">SignUp</a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div class="bg-icon">
-        <div class="area-bingkai-atas">
-            <img class="bingkai-atas" src="{{url('/img/atas.png')}}" alt="Image"/>
-        </div>
-        <div class="area-bingkai-bawah">
-            <img class="bingkai-bawah" src="{{url('/img/bawah.png')}}" alt="Image"/>
-        </div>
-    </div>
     
+    <img src="{{ asset('/img/icon-food.png') }}" class="icon-item" alt="">
+
 </body>
 </html>
