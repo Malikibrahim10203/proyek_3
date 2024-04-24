@@ -47,16 +47,14 @@ Route::group(['middleware' => ['auth']], function()
 
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
 
+    Route::get('/catatan', 'App\Http\Controllers\CatatanController@Index')->name('catatan');
+
     Route::get('/bookfood', function() {
         return view('page/bookfood');
     });
 
     Route::get('/calculator', function() {
         return view('page/calculator');
-    });
-
-    Route::get('/catatan', function() {
-        return view('page/catatan');
     });
 
     Route::get('/hasil-analisis', function(){
