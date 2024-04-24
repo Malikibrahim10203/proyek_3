@@ -52,6 +52,19 @@
                         <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $user->height}}" disabled>
                     </div>
                 </div>
+                <div class="group-3">
+                    <div class="goals">
+                        <p> Goals </p>
+                    </div>
+                <div class="group-4">
+                    <div class="gambar-goals">
+                        <img src="{{URL::asset('/img/goals.png')}}">
+                    </div>
+                    <div class="kalori">
+                        <h5 class="kalorii-text"> Kalori Harian</h5>
+                        <p> 2500 Kkal </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

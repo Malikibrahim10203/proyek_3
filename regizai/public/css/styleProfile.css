@@ -48,3 +48,23 @@ html, body {
     color: black;
     font-size: 20pt;
 }
+
+.goals {
+    margin-top: 14%;
+    margin-left: 5%;
+}
+
+.gambar-goals{
+    margin-left: 2%;
+}
+
+.group-4 {
+    display: flex;
+}
+
+.kalori {
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+
