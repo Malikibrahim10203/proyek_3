@@ -38,21 +38,19 @@
 
         </div>
         <div class="group3">
-            <div class="area-artikel mt-3">
+            <div class="area-artikel mr-2">
                 <div class="card1" style="width: 18rem;">
-                    <img class="card-img-top" src="{{ url('/img/avocado.jpg') }}" alt="Card image cap">
-                    <div class="card-body">
+                    <iframe allow="accelorometer; autoplay; clipboard-write; encryted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="115" 
+                    src="https://www.youtube.com/embed//IzsIZ4CwyXs?si=8hf12zl039T5IY9t" title="Youtube Vidio Player" width="220"></iframe>
                     </div>
                 </div>
                 <div class="card2" style="width: 18rem;">
-                    <img class="card-img-top" src="{{ url('/img/oat.png') }}" alt="Card image cap">
-                    <div class="card-body">
-                    </div>
+                    <iframe allow="accelorometer; autoplay; clipboard-write; encryted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="115" 
+                    src="https://www.youtube.com/embed/MM-ukHFZYgM?si=eXYUvMl3yzSILsxU" title="Youtube Vidio Player" width="220"></iframe>
                 </div>
-                <div class="card2" style="width: 18rem;">
-                    <img class="card-img-top" src="{{ url('/img/sup.jpg') }}" alt="Card image cap">
-                    <div class="card-body">
-                    </div>
+                <div class="card3" style="width: 18rem;">
+                    <iframe allow="accelorometer; autoplay; clipboard-write; encryted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="115" 
+                    src="https://www.youtube.com/embed/WDRujOJVykE?si=cC_5ugrkCFmXP0wy" title="Youtube Vidio Player" width="220"></iframe>
                 </div>
             </div>
 

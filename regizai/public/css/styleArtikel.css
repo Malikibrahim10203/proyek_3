@@ -55,8 +55,12 @@ body {
 }
 
 .card2{
-    margin-left: 5vh;
+    margin-left: 3vh;
 }
+.card3{
+    margin-left: 3vh;
+}
+
 
 .group3 {
     display: flex;
