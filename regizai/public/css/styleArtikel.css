@@ -40,3 +40,36 @@ body {
 .judul {
     font-weight: 700;
 }
+
+.nasi {
+    height: 35vh;
+    width: 35vh;
+}
+ .area-artikel {
+    display: flex;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 150px;
+}
+
+.card2{
+    margin-left: 5vh;
+}
+
+.group3 {
+    display: flex;
+}
+
+.p3 { 
+ font-weight: bold;
+}
+
+.p5 { 
+    font-weight: bold;
+   }
+
+.p7 { 
+    font-weight: bold;
+   }
