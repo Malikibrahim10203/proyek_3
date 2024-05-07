@@ -23,7 +23,7 @@
             </div>
             <div class="content-isi">
                 <div class="nasi-campur mb-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 19rem;">
                         <div class="card-body">
                           <h5 class="card-title">Nasi Campur</h5>
                           <p class="card-text"> 355 Calories</p>
@@ -31,18 +31,18 @@
                     </div>
                 </div>
                 <div class="nasi-campur mb-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 19rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Nasi Campur</h5>
-                          <p class="card-text"> 355 Calories</p>
+                          <h5 class="card-title">Nasi kuning</h5>
+                          <p class="card-text"> 215 Calories</p>
                         </div>
                     </div>
                 </div>
                 <div class="nasi-campur mb-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 19rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Nasi Campur</h5>
-                          <p class="card-text"> 355 Calories</p>
+                          <h5 class="card-title">Nasi uduk</h5>
+                          <p class="card-text"> 220 Calories</p>
                         </div>
                     </div>
                 </div>

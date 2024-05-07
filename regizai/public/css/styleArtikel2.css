@@ -1,0 +1,96 @@
+body {
+    background-image: url( "../img/bg-artikel.png") ;
+    background-size: 100% 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.gambar {
+    width:  160vh;
+    height: 50vh;
+    margin-top: 5%;
+}
+
+.p2{
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.group2 {
+    margin-top: 2%;
+}
+
+.p1 {
+    font-size: 20pt;
+}
+
+.keseluruhan {
+    justify-content: center;
+    align-items: center;
+}
+
+.group-text {
+    width: 160vh;
+}
+
+.judul {
+    font-weight: 700;
+}
+
+.nasi {
+    height: 35vh;
+    width: 35vh;
+}
+ .area-artikel {
+    display: flex;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 150px;
+}
+
+.card2{
+    margin-left: 3vh;
+}
+.card3{
+    margin-left: 3vh;
+}
+
+
+
+.group3 {
+    display: flex;
+}
+
+.p3 { 
+ font-weight: bold;
+}
+
+.p5 { 
+    font-weight: bold;
+   }
+
+.p7 { 
+    font-weight: bold;
+   }
+
+.p9 { 
+    font-weight: bold;
+   }
+
+.p11 {
+    font-weight: bold;
+}
+
+.p13 {
+    font-weight: bold;
+}
+
+.p15 {
+    font-weight: bold;
+}

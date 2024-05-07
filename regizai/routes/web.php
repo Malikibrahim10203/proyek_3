@@ -61,7 +61,15 @@ Route::group(['middleware' => ['auth']], function()
         return view('page/hasil');
     });
 
+    Route::get('/catatan', function(){
+        return view('page/catatan');
+    });
+
     Route::get('/artikel', function(){
         return view('page/artikel');
+    });
+
+    Route::get('/artikel-menu', function(){
+        return view('page/artikel2');
     });
 });
