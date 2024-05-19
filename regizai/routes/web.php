@@ -72,4 +72,9 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('/artikel-menu', function(){
         return view('page/artikel2');
     });
+
+    Route::get('/edit_profil', function(){
+        return view('page/edit_profil');
+    });
+
 });
