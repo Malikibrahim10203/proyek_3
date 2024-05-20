@@ -22,6 +22,16 @@
     align-items: center;
 }
 
+.group4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-primary {
+    width: 20vh;
+    background-color: #734597 !important;
+    border-color: #734597 !important;
+}
 .keseluruhan {
     width: 100vh;
     align-items: center;
