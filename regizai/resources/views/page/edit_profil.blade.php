@@ -16,16 +16,20 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
 <body>
-    <div class="keseluruhan"> 
+    <div class="keseluruhan">
+        <div class="group9">
+            <div class="kembali">
+                <a href="{{ url('profile') }}"><i class="fas fa-arrow-left"></i></a>
+                 <div class="grp_image">
+        </div>
         <div class="group1 mt-5">
-            <div class="grp_image">
-                <img src="{{URL::asset('/img/gcowo.jpg')}}" alt="profile Pic" height="100" width="100">
-            </div>
+                  <img src="{{URL::asset('/img/gcowo.jpg')}}" alt="profile Pic" height="100" width="100">
+             </div>
         </div>
         <div class="group2 mt-5">
             <div class="text1">
                 <h2>Change Username</h2>
-                <div class="coloum"> 
+                <div class="coloum">
                         <input class="form-control form-control-lg input mt-4" type="text" name="username" placeholder="Username">
                 </div>
             </div>
@@ -33,12 +37,12 @@
         <div class="group3 mt-3">
             <div class="text2">
                 <h2>Change Password</h2>
-                 <div class="coloum2"> 
+                 <div class="coloum2">
                      <div class="text2">
                     <input class="form-control form-control-lg input mt-4" type="text" name="username" placeholder="Password Old :">
                     <input class="form-control form-control-lg input mt-4" type="text" name="username" placeholder="Password New :">
                     <input class="form-control form-control-lg input mt-4" type="text" name="username" placeholder="Password Confirm">
-                    </div>    
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,7 +51,7 @@
                 <button class="btn btn-primary tombol" type="submit">Confirm</button>
             </div>
         </div>
-      
+
     </div>
 </body>
 </html>

@@ -30,7 +30,7 @@
                     <p class="text-profile">profile</p>
                 </div>
                 <div class="titik-tiga">
-                    <i class="fa-solid fa-ellipsis-vertical titik-tiga"></i>
+                    <a href="{{ url('edit_profil') }}"><i class="fa-solid fa-ellipsis-vertical titik-tiga"></i></a>
                 </div>
             </div>
             <div class="group-2">
