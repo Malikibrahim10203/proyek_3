@@ -18,7 +18,7 @@
 <body>
     <div class="keseluruhan">
         <div class="group9">
-            <div class="kembali">
+            <div class="kembali mt-5">
                 <a href="{{ url('profile') }}"><i class="fas fa-arrow-left"></i></a>
                  <div class="grp_image">
         </div>
