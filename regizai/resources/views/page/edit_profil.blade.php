@@ -30,9 +30,9 @@
                 </div>
             </div>
         </div>
-        <div class="group3 mt-5">
+        <div class="group3 mt-3">
             <div class="text2">
-                <h2>Change Username</h2>
+                <h2>Change Password</h2>
                  <div class="coloum2"> 
                      <div class="text2">
                     <input class="form-control form-control-lg input mt-4" type="text" name="username" placeholder="Password Old :">
@@ -40,6 +40,11 @@
                     <input class="form-control form-control-lg input mt-4" type="text" name="username" placeholder="Password Confirm">
                     </div>    
                 </div>
+            </div>
+        </div>
+        <div class="group4 mt-3">
+            <div class="button">
+                <button class="btn btn-primary tombol" type="submit">Confirm</button>
             </div>
         </div>
       
