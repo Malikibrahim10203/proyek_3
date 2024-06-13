@@ -46,7 +46,7 @@
                     <div class="jumbotron jumbotron-fluid mt-2">
                         <div class="container" style="display:block;">
                             <h1 class="display-4">BMI Result</h1>
-                            <p class="lead">{{ $BMI }}</p>
+                            <p class="lead"></p>
                         </div>
                     </div>
                 </div>

@@ -42,7 +42,7 @@
                     <button type="button" class="btn btn-outline-secondary mt-4 ml-2" onclick="showDp();"><i class="fa-solid fa-calendar-days"></i></button>
                 </div>
 
-                <input class="form-control form-control-lg mt-4" type="number" name="width" placeholder="Width :" min="0" max=1000>
+                <input class="form-control form-control-lg mt-4" type="number" name="width" placeholder="Weight :" min="0" max=1000>
                 <input class="form-control form-control-lg mt-4" type="number" name="height" placeholder="Height :" min="0" max=1000>
 
                 <div class="kirim mt-5">

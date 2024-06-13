@@ -77,4 +77,5 @@ Route::group(['middleware' => ['auth']], function()
         return view('page/edit_profil');
     });
 
+
 });
