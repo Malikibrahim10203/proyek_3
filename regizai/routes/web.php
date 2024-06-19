@@ -46,16 +46,14 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('/profile', 'App\Http\Controllers\ProfileController@index')->name('profile');
 
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
-
     Route::get('/catatan', 'App\Http\Controllers\CatatanController@Index')->name('catatan');
 
     Route::get('/bookfood', function() {
         return view('page/bookfood');
     });
 
-    Route::get('/calculator', function() {
-        return view('page/calculator');
-    });
+    Route::get('/calculator', 'App\Http\Controllers\CalculatorController@index')->name('calculator');
+    Route::post('/calculate', 'App\Http\Controllers\CalculatorController@calculateBMI')->name('calculate');
 
     Route::get('/hasil-analisis', function(){
         return view('page/hasil');
@@ -77,5 +75,9 @@ Route::group(['middleware' => ['auth']], function()
         return view('page/edit_profil');
     });
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/firgiansyah_branch
 
 });
