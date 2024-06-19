@@ -23,18 +23,18 @@
                 <h1 class="kalkulator">CALCULATOR BMI</h1>
                 <p class="description">Calculate your ideal weight</p>
             </div>
-            <Form action="{{ url('calculator') }}" method="POST">
+            <Form action="{{ url('calculate') }}" method="POST">
                 @csrf
                 <div class="area-form">
                     <div class="area-input">
                         <div class="input-group mb-1">
-                            <input class="form-control form-control-lg mt-4 " name="width" type="number" placeholder="weight"> 
+                            <input class="form-control form-control-lg mt-4 " name="weight" type="number" placeholder="weight"> 
                             <div class="kg">
                                 <input class="form-control form-control-lg mt-4 " placeholder="Kg" disabled>
                             </div>
                         </div>
                         <div class="input-group mb-1">
-                            <input class="form-control form-control-lg mt-4" name="height" type="number" placeholder="height">
+                            <input class="form-control form-control-lg mt-4" name="height" type="text" placeholder="height">
                             <div class="kg">
                                 <input class="form-control form-control-lg mt-4 " placeholder="Cm" disabled>
                             </div>
@@ -46,7 +46,8 @@
                     <div class="jumbotron jumbotron-fluid mt-2">
                         <div class="container" style="display:block;">
                             <h1 class="display-4">BMI Result</h1>
-                            <p class="lead">{{ $BMI }}</p>
+                            
+                            <p class="lead">{{ $BMI['bmi'] }}</p>
                         </div>
                     </div>
                 </div>
